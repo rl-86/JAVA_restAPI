@@ -1,4 +1,4 @@
-package com.example.java_restapi;
+package com.example.java_restapi.entities;
 import java.time.LocalDate;
 
 public class Product {

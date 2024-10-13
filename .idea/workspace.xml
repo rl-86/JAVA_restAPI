@@ -9,31 +9,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d2b1571-e178-469b-b530-9b61b0444b44" name="Changes" comment="New Project">
+    <list default="true" id="9d2b1571-e178-469b-b530-9b61b0444b44" name="Changes" comment="Rename">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/ProductResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/HelloResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/ProductRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/entities/ProductRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_restapi/service/Warehouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "rl-86"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rl-86&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/rl-86/JAVA_restAPI.git",
-    "accountId": "01ee0f84-5f6f-40fa-a833-6517f8a10732"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rl-86/JAVA_restAPI.git&quot;,
+    &quot;accountId&quot;: &quot;01ee0f84-5f6f-40fa-a833-6517f8a10732&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -50,28 +65,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Warehouse.executor&quot;: &quot;Run&quot;,
-    &quot;JBoss/WildFly Server.JBoss/WildFly 33.0.2.Final.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Warehouse.executor": "Run",
+    "Application.com.example.java_restapi.Warehouse.executor": "Run",
+    "Application.com.example.java_restapi.service.Warehouse.executor": "Run",
+    "JBoss/WildFly Server.JBoss/WildFly 33.0.2.Final.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "test",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\RL86\IdeaProjects\JAVA_restAPI\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 33.0.2.Final">
     <configuration name="Warehouse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.java_restapi.Warehouse" />
+      <option name="MAIN_CLASS_NAME" value="com.example.java_restapi.service.Warehouse" />
       <module name="JAVA_restAPI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.java_restapi.*" />
+          <option name="PATTERN" value="com.example.java_restapi.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +178,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Warehouse" />
+      <item itemvalue="Application.com.example.java_restapi.Warehouse" />
       <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 33.0.2.Final" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Warehouse" />
+        <item itemvalue="Application.com.example.java_restapi.Warehouse" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +204,8 @@
       <option name="presentableId" value="Default" />
       <updated>1728738283649</updated>
       <workItem from="1728738284537" duration="7101000" />
-      <workItem from="1728810348380" duration="533000" />
+      <workItem from="1728810348380" duration="6398000" />
+      <workItem from="1728819372561" duration="8730000" />
     </task>
     <task id="LOCAL−00001" summary="New Project">
       <option name="closed" value="true" />
@@ -188,7 +214,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1728738569456</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Rename">
+      <option name="closed" value="true" />
+      <created>1728811309026</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1728811309026</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +229,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Project" />
+    <MESSAGE value="Rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename" />
   </component>
 </project>
