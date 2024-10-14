@@ -19,6 +19,26 @@ public class Warehouse {
     private final List<Product> products = new CopyOnWriteArrayList<>();
     private static int nextId = 1;
 
+    @PostConstruct
+    public void init() {
+        Stream.of(
+                new Product(0, "Bread", Product.Category.FOOD, 4, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Milk", Product.Category.FOOD, 5, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Butter", Product.Category.FOOD, 3, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Cheese", Product.Category.FOOD, 4, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Apple", Product.Category.FOOD, 5, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Banana", Product.Category.FOOD, 4, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Table", Product.Category.FURNITURE, 3, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Chair", Product.Category.FURNITURE, 4, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Sofa", Product.Category.FURNITURE, 5, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Screwdriver", Product.Category.TOOLS, 4, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Hammer", Product.Category.TOOLS, 5, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Saw", Product.Category.TOOLS, 4, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Drill", Product.Category.TOOLS, 5, LocalDate.of(2024, 9, 12)),
+                new Product(0, "Screw", Product.Category.TOOLS, 4, LocalDate.of(2024, 9, 12))
+        ).forEach(this::addProduct);
+    }
+
     public List<ProductRecord> getProducts() {
         return products.stream()
                 .map(ProductRecord::map)
@@ -29,8 +49,8 @@ public class Warehouse {
         if (product.getName() == null || product.getName().isBlank()) {
             throw new IllegalArgumentException("Product name cannot be null or blank");
         }
-        products.add(product);
         product.setId(nextId++);
+        products.add(product);
     }
 
     public ProductRecord getProductById(int id) {
@@ -49,24 +69,4 @@ public class Warehouse {
                 .collect(Collectors.toList());
     }
 
-    @PostConstruct
-    public void init() {
-        Stream.of(
-                new Product(nextId++, "Bread", Product.Category.FOOD, 4, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Milk", Product.Category.FOOD, 5, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Butter", Product.Category.FOOD, 3, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Cheese", Product.Category.FOOD, 4, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Apple", Product.Category.FOOD, 5, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Banana", Product.Category.FOOD, 4, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Table", Product.Category.FURNITURE, 3, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Chair", Product.Category.FURNITURE, 4, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Sofa", Product.Category.FURNITURE, 5, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Screwdriver", Product.Category.TOOLS, 4, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Hammer", Product.Category.TOOLS, 5, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Saw", Product.Category.TOOLS, 4, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Drill", Product.Category.TOOLS, 5, LocalDate.of(2024, 9, 12)),
-                new Product(nextId++, "Screw", Product.Category.TOOLS, 4, LocalDate.of(2024, 9, 12))
-        ).forEach(this::addProduct);
-    }
-
-    }
+}
