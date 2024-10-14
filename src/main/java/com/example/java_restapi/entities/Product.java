@@ -1,4 +1,5 @@
-package com.example.java_restapi;
+package com.example.java_restapi.entities;
+
 import java.time.LocalDate;
 
 public class Product {
@@ -14,6 +15,12 @@ public class Product {
     private final LocalDate createdAt;
     private LocalDate updatedAt;
 
+    // Default constructor
+    public Product() {
+        this.createdAt = LocalDate.now();
+        this.updatedAt = LocalDate.now();
+    }
+
     public Product(int id, String name, Category category, int rating, LocalDate createdAt) {
         this.id = id;
         this.name = name;
@@ -26,24 +33,29 @@ public class Product {
     public int getId() {
         return id;
     }
+
     public String getName() {
         return name;
     }
+
     public Category getCategory() {
         return category;
     }
+
     public int getRating() {
         return rating;
     }
+
     public LocalDate getCreatedAt() {
         return createdAt;
     }
+
     public LocalDate getUpdatedAt() {
         return updatedAt;
     }
 
     public void setName(String name) {
-        if (!this.name.equals(name)) {
+        if (this.name == null || !this.name.equals(name)) {
             this.name = name;
             this.updatedAt = LocalDate.now();
         }
@@ -70,6 +82,6 @@ public class Product {
     @Override
     public String toString() {
         return id + "\t\t" +
-                name + "\t\t\t\t" + category + "\t\t\t\t" + rating +  "\t\t\t\t" +createdAt +  "\t\t\t\t" +updatedAt;
+                name + "\t\t\t\t" + category + "\t\t\t\t" + rating +  "\t\t\t\t" + createdAt +  "\t\t\t\t" + updatedAt;
     }
 }
